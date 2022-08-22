@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithsathya/portfolio.git"
+  },
+  "author": "codewithsathya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewithsathya/portfolio/issues"
+  },
+  "homepage": "https://github.com/codewithsathya/portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
