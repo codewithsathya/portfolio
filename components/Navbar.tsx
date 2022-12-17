@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
         <Image
           src="/../public/assets/logo.png"
           alt="/"
@@ -41,14 +41,14 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden px-4">
             <AiOutlineMenu size={25} />
           </div>
         </div>
       </div>
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full bg-black/70" : ""
         }
       >
         <div
@@ -63,7 +63,7 @@ const Navbar = () => {
               <Image
                 src="/../public/assets/logo.png"
                 alt="/"
-                width="170"
+                width="200"
                 height="35"
               />
               <div
@@ -74,7 +74,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-[85%] md:w-[90%] py-2">
                 Let&apos;s build something legendary together
               </p>
             </div>
@@ -82,19 +82,19 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li className="py-4 text-md">Home</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">About</li>
+                <li className="py-4 text-md">About</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+                <li className="py-4 text-md">Skills</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+                <li className="py-4 text-md">Projects</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+                <li className="py-4 text-md">Contact</li>
               </Link>
             </ul>
             <div className="pt-20">
@@ -103,16 +103,16 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-around my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <FaLinkedinIn size={25}/>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <FaGithub size={25}/>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <AiOutlineMail size={25}/>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <BsFillPersonLinesFill size={25}/>
                 </div>
               </div>
             </div>
