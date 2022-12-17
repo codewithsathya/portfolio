@@ -23,7 +23,7 @@ const Navbar = () => {
           height="50"
         />
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex px-4">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
