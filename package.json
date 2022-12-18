@@ -4,7 +4,8 @@
   "description": "My personal portfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "node bin/www"
+    "start": "node bin/www",
+    "production": "pm2 start ./bin/www --name portfolio"
   },
   "repository": {
     "type": "git",
