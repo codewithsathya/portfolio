@@ -11,9 +11,9 @@ type ProjectProps = {
 
 const ProjectItem = ({ title, backgroundImg, projectUrl, description }: ProjectProps) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+    <div className="relative flex items-center justify-center h-auto w-full shadow-2xl shadow-gray-400 rounded-xl p-0 group hover:p-0 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] ease-in duration-100 overflow-hidden">
       <Image
-        className="rounded-xl group-hover:opacity-10"
+        className="rounded-xl group-hover:opacity-10 group-hover:scale-105 ease-in duration-200"
         src={backgroundImg}
         alt="/"
       />
@@ -25,7 +25,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, description }: ProjectP
           {description}
         </p>
         <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+          <p className="text-center py-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-200">
             More Info
           </p>
         </Link>
