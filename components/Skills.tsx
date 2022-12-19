@@ -1,6 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
+import htmlImg from "../public/assets/skills/html5.png"
+import cssImg from "../public/assets/skills/css3.png"
+import javaImg from "../public/assets/skills/java.png"
+import javascriptImg from "../public/assets/skills/javascript.png"
+import nodejsImg from "../public/assets/skills/nodejs.png"
+import reactImg from "../public/assets/skills/react.png"
+import typescriptImg from "../public/assets/skills/typescript.png"
+
 const Skills = () => {
   return (
     <div id="skills" className="w-full lg:h-screen px-8 pb-0 pt-24 md:pt-4">
@@ -14,7 +22,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="auto">
                 <Image
-                  src="/../public/assets/skills/html5.png"
+                  src={htmlImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -30,7 +38,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="auto">
                 <Image
-                  src="/../public/assets/skills/css3.png"
+                  src={cssImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -45,7 +53,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="auto">
                 <Image
-                  src="/../public/assets/skills/java.png"
+                  src={javaImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -60,7 +68,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="auto">
                 <Image
-                  src="/../public/assets/skills/javascript.png"
+                  src={javascriptImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -75,7 +83,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="auto">
                 <Image
-                  src="/../public/assets/skills/typescript.png"
+                  src={typescriptImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -90,7 +98,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="auto">
                 <Image
-                  src="/../public/assets/skills/nodejs.png"
+                  src={nodejsImg}
                   width="64"
                   height="64"
                   alt="/"
@@ -105,7 +113,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="auto">
                 <Image
-                  src="/../public/assets/skills/react.png"
+                  src={reactImg}
                   width="64"
                   height="64"
                   alt="/"

@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
+import profile from "../public/assets/profile.png"
+
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-8 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="w-full h-auto m-auto rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image src="/../public/assets/profile.png" alt="/" width="400" height="0" />
+          <Image src={profile} alt="/" width="400" height="0" />
         </div>
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">About</p>

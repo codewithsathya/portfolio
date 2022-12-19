@@ -6,6 +6,8 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
+import profile from "../public/assets/profile.png"
+
 const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen pt-12">
@@ -21,7 +23,7 @@ const Contact = () => {
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   alt="/"
-                  src="/../public/assets/profile.png"
+                  src={profile}
                   width="250"
                   height="0"
                 />
