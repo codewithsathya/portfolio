@@ -9,6 +9,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [linkColor, setLinkColor] = useState("#1f2937")
 
   const handleNav = () => {
     setNav(!nav);
@@ -27,6 +28,7 @@ const Navbar = () => {
 
   return (
     <div
+      style={{background: "#ecf0f0"}}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -43,7 +45,7 @@ const Navbar = () => {
           />
         </Link>
         <div>
-          <ul className="hidden md:flex px-4">
+          <ul style={{color: `${linkColor}`}} className="hidden md:flex px-4">
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
@@ -72,8 +74,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-[#edf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-[#edf0f3] p-10 ease-in duration-300"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-300"
           }
         >
           <div>
@@ -99,20 +101,20 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
-                <li className="py-4 text-md">Home</li>
+              <Link href="/" >
+                <li onClick={() => setNav(false)} className="py-4 text-md">Home</li>
               </Link>
               <Link href="/#about">
-                <li className="py-4 text-md">About</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md">About</li>
               </Link>
               <Link href="/#skills">
-                <li className="py-4 text-md">Skills</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md">Skills</li>
               </Link>
               <Link href="/#projects">
-                <li className="py-4 text-md">Projects</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md">Projects</li>
               </Link>
               <Link href="/#contact">
-                <li className="py-4 text-md">Contact</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md">Contact</li>
               </Link>
             </ul>
             <div className="pt-20">
@@ -120,18 +122,26 @@ const Navbar = () => {
                 Let&apos;s Connect
               </p>
               <div className="flex items-center justify-around my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn size={25} />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub size={25} />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail size={25} />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill size={25} />
-                </div>
+                <a href="https://www.linkedin.com/in/myselfsathya/" target="_blank" rel="noreferrer">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn size={25} />
+                  </div>
+                </a>
+                <a href="https://github.com/codewithsathya" target="_blank" rel="noreferrer">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub size={25} />
+                  </div>
+                </a>
+                <Link href="/#contact">
+                  <div onClick={() => setNav(!nav)} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineMail size={25} />
+                  </div>
+                </Link>
+                <a href="https://resume.codewithsathya.com" target="_blank" rel="noreferrer">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsFillPersonLinesFill size={25} />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

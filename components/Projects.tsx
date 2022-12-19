@@ -10,10 +10,10 @@ const Projects = () => {
   return (
     <div id="projects" className="w-full h-auto py-12">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="px-8 text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-4">What I&apos;Built</h2>
+        <h2 className="py-4 px-8">What I&apos;Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem title="Photopia" backgroundImg={photopiaImg} projectUrl="/" description="A Social media app made with NodeJS for a Hackathon"/>
           <ProjectItem title="Cryptotracker" backgroundImg={cryptotrackerImg} projectUrl="/" description="React app that shows change in price of cryptos in custom time frames."/>
