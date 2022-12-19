@@ -34,18 +34,38 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-4">Connect With me</p>
                 <div className="flex items-center justify-around py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn size={25} />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub size={25} />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail size={25} />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsFillPersonLinesFill size={25} />
-                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/myselfsathya/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaLinkedinIn size={25} />
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/codewithsathya"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaGithub size={25} />
+                    </div>
+                  </a>
+                  <Link href="/#contact">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <AiOutlineMail size={25} />
+                    </div>
+                  </Link>
+                  <a
+                    href="https://resume.codewithsathya.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <BsFillPersonLinesFill size={25} />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
